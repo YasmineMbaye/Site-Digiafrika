@@ -1,3 +1,5 @@
-import { type RouteConfig, index } from "@react-router/dev/routes";
+// app/root.ts
+import { type RouteConfig } from "@react-router/dev/routes";
+import FrontoficeController from "./controller/front-office/FrontOfficeController";
 
-export default [index("routes/home.tsx")] satisfies RouteConfig;
+export default [ ...FrontoficeController] satisfies RouteConfig;

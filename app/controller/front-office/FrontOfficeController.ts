@@ -15,3 +15,5 @@ export default [
     route("service", "view/front-office/OurserviceView.tsx"),
   ]),
 ] satisfies RouteConfig;
+
+

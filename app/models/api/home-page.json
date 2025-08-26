@@ -1,0 +1,103 @@
+{
+    "banner":{
+        "title":"DigiAfrika– L'Afrique entre dans l'ère de la digitalisation publique",
+        "describtion":"Nous accompagnons les institutions africaines dans leur transformation numérique. Grâce à notre expertise, nous concevons des plateformes sur-mesure pour automatiser les démarches administratives, juridiques et fiscales.",
+        "actionlabel":"Planifier une analyse de votre projet",
+        "actionpath":"/",
+        "image":"https://img.freepik.com/free-vector/modern-welcome-lettering-your-event_1017-50033.jpg?t=st=1754483099~exp=1754486699~hmac=84327fed212e05826e6de24df3478436ca890837a9282034cd764279825c7cd8&w=1060",
+        "subtitle":"Solutions digitales modernes"
+    },
+
+    "reatingsection":{
+        "title":"Nos chiffres clés",
+        "cards":[
+            {
+                "id": 1,
+                "score":"+20",
+                "describtion":"Plateformes développées"
+            },
+            {
+                "id": 2,
+                "score":"+3",
+                "describtion":"Pays partenaires"
+            },
+            {
+                "id": 3,
+                "score":"+200000",
+                "describtion":"Usagers connectés"
+            }
+        ]
+
+    },
+    "servicesection":{
+        "title":"Nos Services",
+        "describtion":"DigiAfrika accompagne les institutions africaines dans leur transformation numérique avec des solutions adaptées.",
+        "cards":[
+            {
+                "id": 1,
+                "title":"Digitalisation des procédures",
+                "describtion":"État civil, autorisations, permis, déclarations"
+            },
+            {
+                "id": 2,
+                "title":"Plateformes fiscales",
+                "describtion":"e-Timbre, e-Vignette, e-TVA, e-Enregistrement"
+            },
+            {
+                "id": 3,
+                "title":"Refonte de systèmes",
+                "describtion":"Modernisation des solutions SIGTAS, SIGFiD, etc."
+            }
+        ],
+        "actionlabel":"Voir tout nos services",
+        "actionpath":"/service"
+    },
+    "projetsection":{
+        "title":"Projets réalisés",
+        "describtion":"Découvrez quelques-uns de nos projets phares réalisés en partenariat avec le gouvernement de Djibouti.",
+        "cards":[
+            {
+                "id": 1,
+                "subtitle":"Djibouti",
+                "title":"e-Timbre",
+                "describtion":"Dématérialisation de l'achat et vérification des timbres fiscaux"
+            },
+            {
+                "id": 2,
+                "subtitle":"Djibouti",
+                "title":"e-Vignette",
+                "describtion":"Paiement de la vignette automobile en ligne"
+            },
+            {
+                "id": 3,
+                "subtitle":"Djibouti",
+                "title":"e-Enregistrement",
+                "describtion":"Déclaration des actes notariés et fonciers"
+            }
+        ],
+        "actionlabel":"Voir tout nos projets",
+        "actionpath":"/project"
+    },
+
+    "partenairesection":{
+        "title":"Ce que nos partenaires disent",
+        "card":[
+            {
+                "textcontent":"« Grâce à DigiAfrika, nous avons pu moderniser nos services fiscaux en un temps record. La plateforme e-Timbre est devenue un pilier dans notre lutte contre la fraude. »",
+                "soustitle":"Direction Générale des Impôts",
+                "describtion":"Djibouti"
+
+            }
+        ]
+    },
+
+    "modernisersection":{
+        "title":"Vous souhaitez moderniser vos services publics ?",
+        "describtion":"Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment nos solutions peuvent transformer votre administration.",
+        "actionlabel":"Planifier une analyse de votre projet",
+        "actionpath":"/",
+        "image":"https://img.freepik.com/free-vector/modern-welcome-lettering-your-event_1017-50033.jpg?t=st=1754483099~exp=1754486699~hmac=84327fed212e05826e6de24df3478436ca890837a9282034cd764279825c7cd8&w=1060"
+        
+    }
+
+}

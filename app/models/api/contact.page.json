@@ -1,0 +1,35 @@
+{
+    "titre":{
+        "titre":"Contactez-nous",
+        "describtion":"Découvrez nos dernières actualités, articles et retours d'expérience sur la digitalisation en Afrique"
+    },
+
+    "formulaire":{
+        "title":"Envoyez-nous un message",
+        "nom":"Nom complet",
+        "email":"Email",
+        "organisation":"Organisation",
+        "telephone":"Téléphone",
+        "message":"Message",
+        "demonstration":"Je souhaite une démonstration de vos solutions",
+        "envoyer":"Envoyer le message"
+    },
+
+    "coordonne":{
+        "coordonne":"Nos coordonnées",
+        "adresse":"Adresse",
+        "ville":"Dakar, Sénégal",
+        "telephone":"Téléphone",
+        "numero":"+221 XX XXX XX XX",
+        "email":"Email",
+        "mail":"contact@digiafrika.com",
+        "ouverture":"Heures d'ouverture",
+        "heure":"Lundi - Vendredi: 8h - 18h",
+        "google": "Google Maps s'afficherait ici"
+
+    },
+
+    "modernise":{
+        "title":"Suivez-nous sur les réseaux sociaux"
+    }
+}

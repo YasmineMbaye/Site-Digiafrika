@@ -1,0 +1,90 @@
+{
+   "titre":{
+     "titre":"Nos Services",
+    "describtion":"DigiAfrika offre une gamme complète de services pour accompagner les institutions africaines dans leur transformation numérique."
+
+   },
+
+   "digitalisation":{
+    "card":[
+        {
+            "id":1,
+        "title":"Digitalisation des procédures administratives",
+        "describtion":"Nous transformons les processus papier en workflows numériques efficaces et transparents.",
+        "soustitre":"Caractéristiques clés:",
+        "civil":"État civil et identité numérique",
+        "demande":"Demandes d'autorisations et permis en ligne,",
+        "portail":"Portails citoyens avec authentification sécurisée,",
+        "paiement":"Paiements électroniques intégrés",
+        "statut":"Suivi en temps réel du statut des demandes",
+        "iconposition":"left"
+    },
+        {
+            "id":2,
+        "title":"Plateformes fiscales et de paiement",
+        "describtion":"Nous développons des systèmes complets pour la collecte et la gestion des recettes fiscales.",
+        "soustitre":"Caractéristiques clés:",
+        "civil":"e-Timbre fiscal dématérialisé",
+        "demande":"e-Vignette automobile",
+        "portail":"e-TVA et déclarations fiscales en ligne",
+        "paiement":"e-Enregistrement des actes",
+        "statut":"Tableaux de bord analytiques pour les autorités",
+        "iconposition":"right"
+    },
+        {
+            "id":3,
+        "title":"Refonte de systèmes existants",
+        "describtion":"Nous modernisons les infrastructures informatiques existantes pour les rendre plus performantes.",
+        "soustitre":"Caractéristiques clés:",
+        "civil":"Migration des solutions legacy vers le cloud",
+        "demande":"Modernisation des interfaces utilisateur",
+        "portail":"Optimisation des performances",
+        "paiement":"Intégration de l'analytique et du reporting",
+        "statut":"Mise à niveau des systèmes SIGFiD et SIGTAS",
+        "iconposition":"left"
+    },
+        {
+            "id":4,
+        "title":"Conseil en transformation numérique",
+        "describtion":"Nous accompagnons les institutions dans la définition et la mise en œuvre de leur stratégie digitale.",
+        "soustitre":"Caractéristiques clés:",
+        "civil":"Audit des systèmes d'information",
+        "demande":" Élaboration de schémas directeurs",
+        "portail":"Formation des agents publics",
+        "paiement":"Conduite du changement",
+        "statut":"Élaboration de politique nationale e-Gov",
+        "iconposition":"right"
+    },
+        {
+            "id":5,
+        "title":"Infrastructure cloud & sécurité",
+        "describtion":"Nous fournissons des infrastructures robustes et sécurisées pour les applications critiques.",
+        "soustitre":"Caractéristiques clés:",
+        "civil":"Hébergement dédié ou cloud hybride",
+        "demande":"Protocoles de cybersécurité avancés",
+        "portail":"Protection des données sensibles",
+        "paiement":"Audits de sécurité réguliers",
+        "statut":"Plans de reprise d'activité",
+        "iconposition":"left"
+    }
+
+    ]
+    
+   },
+   "modernise":{
+            "title":"Vous souhaitez moderniser vos services publics ?",
+            "description":"Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment nos solutions peuvent transformer votre administration.",
+            
+                    
+                    "actionlabel":"Planifier une analyse de votre projet",
+                    "actionpath":"/",
+                    "actionbuttonlabel":"Nous contacter",
+                    "actionbuttonpath":"/contact"
+
+                
+                
+            
+        }
+
+
+}

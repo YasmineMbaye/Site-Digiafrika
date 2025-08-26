@@ -1,13 +1,20 @@
 import { NavLink } from "react-router";
 
-
-export default function Navitems({pageProps}:{pageProps:NavigationProps}){
-
-        return(
-            <NavLink to={pageProps.url}  className={ ({isActive})=>`h-full px-2 justify-center items-center text-center  text-sm ${isActive&&' font-bold'}` }>
-                {pageProps.name}
-            </NavLink>
-
-        )
-
-    }
+export default function Navitems({
+  pageProps, border,borderbold
+}: {
+  pageProps: NavigationProps, border:string, borderbold:string;
+}) {
+  return (
+    <NavLink
+      to={pageProps.url}
+      className={  ({ isActive }) =>
+        `   ${
+          isActive && `  border-t-0 border-l-0 border-r-0 ${border || ""} ${borderbold || ""}`
+        }`
+      }
+    >
+      {pageProps.name}
+    </NavLink>
+  );
+}

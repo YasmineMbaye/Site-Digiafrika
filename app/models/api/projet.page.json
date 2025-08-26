@@ -1,0 +1,157 @@
+{
+    "titre":{
+        "titre":"Projets réalisés",
+        "describtion":"Découvrez les plateformes développées par DigiAfrika pour moderniser les administrations publiques en Afrique. Tous ces projets sont développés et pilotés par l'équipe DigiAfrika en collaboration avec les autorités nationales."
+    },
+
+    "button":{
+        
+        "label":[
+       {
+        "id":1,
+         "actionlabel":"Tous les projets",
+        "actionpath":"/project"
+        
+       },
+       {
+        "id":2,
+        "actionlabel":"Djibouti dj",
+        "actionpath": "/"
+       }
+        ]
+        
+
+    },
+
+    "sectionsvignettes": [
+    {
+        "id":1,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2024",
+      "title": "e-Timbre",
+      "description": "Dématérialisation de l'achat et vérification des timbres fiscaux",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Achat de timbres fiscaux en ligne",
+      "demande": "Authentification par QR code",
+      "portail": "Paiement mobile intégré",
+      "paiement": "Tableau de bord administration"
+    },
+    {
+        "id":2,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2023",
+      "title": "e-Vignette",
+      "description": "Paiement de la vignette automobile en ligne",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Intégration avec la base de données des véhicules",
+      "demande": "Paiement électronique sécurisé",
+      "portail": "Génération de certificats numériques",
+      "paiement": "Vérification mobile pour les autorités"
+    },
+    {"id":3,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2024",
+      "title": "e-Enregistrement",
+      "description": "Visualisation des recettes douanières",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Soumission en ligne des actes",
+      "demande": "Calcul automatique des droits",
+      "portail": "Signatures électroniques",
+      "paiement": "Interface notaires/conservateurs"
+    },
+    {
+        "id":4,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2023",
+      "title": "e-TVA",
+      "description": "Télé-déclaration de la Taxe sur la Valeur Ajoutée",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Déclarations périodiques en ligne",
+      "demande": "Calcul automatisé des montants",
+      "portail": "Historique des déclarations",
+      "paiement": "Alertes et notifications"
+    },
+    {
+        "id":5,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2022",
+      "title": "SIGFiD",
+      "description": "Refonte complète du système de gestion fiscale",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Intégration des différents modules fiscaux",
+      "demande": "Reporting avancé et tableaux de bord",
+      "portail": "Gestion des utilisateurs à plusieurs niveaux",
+      "paiement": "Connecteurs avec systèmes tiers"
+    },
+    {
+        "id":6,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2023",
+      "title": "Dashboard douanes",
+      "description": "Visualisation des recettes douanières",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Suivi en temps réel des recettes",
+      "demande": "Analyses prédictives",
+      "portail": "Indicateurs de performance clés",
+      "paiement": "Export de rapports personnalisés"
+    },
+    {
+        "id":7,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2024",
+      "title": "e-SIF",
+      "description": "Système intégré de gestion foncière",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Cadastre numérique",
+      "demande": "Gestion des titres fonciers",
+      "portail": "Workflows d'approbation",
+      "paiement": "Interface publique de consultation"
+    },
+    {
+        "id":8,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2023",
+      "title": "e-Visa",
+      "description": "Plateforme de demande de visa en ligne",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Formulaire de demande en ligne",
+      "demande": "Paiement sécurisé des frais",
+      "portail": "Suivi de statut de la demande",
+      "paiement": "Portail pour les agents d'immigration"
+    },
+    {
+        "id":9,
+      "prenom": "DJ",
+      "nom": "République de Djibouti",
+      "date": "2024",
+      "title": "Dashboard-DGI",
+      "description": "Dashboard analyses des recettes de la DGI",
+      "soustitre": "FONCTIONNALITÉS CLÉS:",
+      "civil": "Visualisation des recettes fiscales",
+      "demande": "Analyse comparative par période",
+      "portail": "Tracking des objectifs budgétaires",
+      "paiement": "Rapports automatisés"
+    }
+  ]
+,
+
+    "modernise":{
+            "title":"Vous souhaitez moderniser vos services publics ? ?",
+            "description":"Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment nos solutions peuvent transformer votre administration.",
+            "actionlabel":"Planifier une analyse de votre projet",
+            "actionpath":"/"
+                    
+
+                
+                
+            
+        }
+}

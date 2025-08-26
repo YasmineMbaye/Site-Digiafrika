@@ -4,7 +4,7 @@ import Header from "../ui/Header"
 
 export default function Frontofficelayout(){
     return(
-        <main>
+        <main >
             <Header/>
             
             <Outlet/>

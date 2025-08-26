@@ -1,0 +1,202 @@
+{
+    "titre":{
+        "titre":"À propos de DigiAfrika",
+        "describtion":"DigiAfrika est une entreprise technologique panafricaine spécialisée dans la digitalisation des systèmes administratifs. Notre mission est de moderniser les services publics à travers des solutions numériques sécurisées, accessibles et durables."
+    },
+
+   "missionvision": {
+
+        "cards":[
+            {
+                "id":"1",
+                "title":"Notre mission",
+                "subtitle":"Concevoir des plateformes intelligentes qui améliorent l'efficacité des administrations publiques africaines, renforcent la transparence, et facilitent l'accès aux services pour les citoyens."
+            },
+            {
+                "id":"2",
+                "title":"Notre vision",
+                "subtitle":"Faire de l'Afrique un continent leader dans l'administration numérique grâce à des technologies souveraines, sécurisées et centrées sur l'humain."
+            }
+        ]
+
+    },
+
+    "valeur":{
+        "title":"Nos valeurs",
+        "describtion":"Ces principes fondamentaux guident nos actions et nos décisions au quotidien.",
+        "cards":[
+            {
+                "id":1,
+                "title":"Innovation",
+                "describtion":"Nous recherchons constamment de nouvelles approches pour améliorer les services publics numériques."
+            },
+            {
+                "id":"2",
+                "title":"Impact social",
+                "describtion":"Nos solutions visent à améliorer concrètement la vie des citoyens et l'efficacité des administrations."
+            },
+            {
+                "id":"3",
+                "title":"Intégrité",
+                "describtion":"Nous travaillons avec honnêteté, transparence et respect dans toutes nos relations professionnelles."
+            },
+            {
+                "id":"4",
+                "title":"Souveraineté numérique",
+                "describtion":"Nous développons des solutions permettant aux pays de maîtriser leurs données et infrastructures technologiques."
+            }
+        ]
+    },
+
+    "equipe":{
+
+        "titre":"Notre équipe fondatrice",
+        "describtion":"Des experts passionnés par la transformation numérique et l'innovation technologique en Afrique.",
+        "cards":[
+            {
+                "id":1,
+                "title":"Thiécoura TRAORE",
+                "soustitle":"Co-Fondateur & PDG",
+                "description":"Fort d'une expertise de plus de 20 ans acquise en Europe et en Afrique, M. TRAORE est diplômé en Télécommunications de Paris. Dirigeant fondateur de DT Telecom, une entreprise sénégalaise majeure dans le secteur des télécommunications, il est également reconnu comme formateur et conférencier expert dans son domaine."
+            },
+            {
+                "id":2,
+                "title":"Iba",
+                "soustitle":"Co-Fondateur & Directeur Technique",
+                "description":"Titulaire d'un Master 2 en Big Data et Machine Learning de l'IAM de Dakar, M. TOLA KOGADOU cumule les fonctions de TechLead Développeur chez MARTEE et de Développeur Full-Stack indépendant. Son expertise couvre les domaines de la Data, du DevOps, ainsi que du développement web et mobile."
+            },
+            {
+                "id":3,
+                "title":"Eugène Rodolphe MAZAMDA TANGUEU",
+                "soustitle":"Co-Fondateur & Directeur des Opérations",
+                "description":"Architecte Multi-cloud chevronné, M. MAZAMDA TANGUEU dirige les équipes DevOps et Data Engineering. Expert en DevSecOps et en architecture de sécurité, il est certifié sur les principales plateformes cloud (Azure, AWS, GCP) et apporte une vision stratégique aux infrastructures de DigiAfrika."
+            },
+            {
+                "id":4,
+                "title":"Alioune DRAME",
+                "soustitle":"Co-Fondateur & Directeur des Produits",
+                "description":"Ingénieur en Génie Civil de formation, M. DRAME est titulaire d'un Master en Techniques Nouvelles de Construction et de Réhabilitation des Bâtiments. Son expertise technique et sa vision analytique lui permettent de concevoir des produits numériques parfaitement adaptés aux besoins des administrations africaines."
+            }
+        ]
+
+
+    },
+
+
+
+    "equipecard":{
+
+
+        "titre":"Notre Équipe",
+        "describtion":"Une équipe talentueuse et diversifiée qui travaille ensemble pour transformer l'administration publique africaine grâce à des solutions numériques innovantes.",
+        "cards":[
+            {
+                "id":1,
+                "title":"Thiécoura TRAORE",
+                
+                "description":"Co-Fondateur & CEO",
+                "prenom": "Photo"
+            },
+            {
+                "id":2,
+                "title":"Iba",
+                
+                "description":"Comptable",
+                "prenom": "Photo"
+            },
+            {
+                "id":3,
+                "title":"Eugène",
+                "prenom": "Photo",
+                "description":"Co-fondateur & COO"
+            },
+            {
+                "id":4,
+                "title":"Salim",
+                "prenom": "Photo",
+                "description":"Consultant en Stratégie et Architecture Entreprise"
+            },
+            {
+                "id":5,
+                "title":"Youness",
+                "prenom": "Photo",
+                "description":"Consultant en CyberSécurité"
+            },
+            {
+                "id":6,
+                "title":"Alioune",
+                "prenom": "Photo",
+                "description":"Co-fondateur & CPO"
+            },
+            {
+                "id":7,
+                "title":"Prince",
+                "prenom": "Photo",
+                "description":"Co-fondateur & CTO"
+            },
+            {
+                "id":8,
+                "title":"Marius",
+                "prenom": "Photo",
+                "description":"Senior Chef Projet AMOA"
+            },
+            {
+                "id":9,
+                "title":"Boubacar",
+                "prenom": "Photo",
+                "description":"Manager Squad Developper"
+            },
+            {
+                "id":10,
+                "title":"Amadou",
+                "prenom": "Photo",
+                "description":"Senior FullStack Developper"
+            },
+            {
+                "id":11,
+                "title":"Mohameth",
+                "prenom": "Photo",
+                "description":"Junior FullStack Developper"
+            },
+            {
+                "id":12,
+                "title":"Thes",
+                "prenom": "Photo",
+                "description":"Junior FullStack Developper"
+            },
+            {
+                "id":13,
+                "title":"Youssef",
+                "prenom": "Photo",
+                "description":"Stagiaire FullStack Developper"
+            },
+            {
+                "id":14,
+                "title":"Abdoulaye",
+                "prenom": "Photo",
+                "description":"Stagiaire FullStack Developper"
+            }
+            
+        ]
+
+
+    },
+    "modernise":{
+            "title":"Vous souhaitez moderniser vos services publics ?",
+            "description":"Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment nos solutions peuvent transformer votre administration.",
+            "label":[
+                {
+                    
+                    "actionlabel":"Planifier une analyse de votre projet",
+                    "actionpath":"/",
+                    "actionbuttonlabel":"Nous contacter",
+                    "actionbuttonpath":"/contact"
+
+                }
+                
+            ]
+        }
+
+
+
+}

@@ -1,0 +1,110 @@
+{
+    "titre":{
+        "titre":"Actualités & Blog",
+        "describtion":"Découvrez nos dernières actualités, articles et retours d'expérience sur la digitalisation en Afrique."
+
+    },
+    "button":[
+        {
+            "id":1,
+            "actionlabel":"Toutes les actualités",
+            "actionpath":"/actuality"
+        },
+        {
+            "id":2,
+            "actionlabel":"Lancements",
+            "actionpath":"/actuality"
+        },
+        {
+            "id":3,
+            "actionlabel":"Projets",
+            "actionpath":"/actuality"
+        },
+        {
+            "id":4,
+            "actionlabel":"Articles",
+            "actionpath":"/actuality"
+        }
+    ],
+
+    "vignette":{
+         "card": [
+            {
+              "id":1,
+            "photo":"photo",
+            "nom":"Lancement",
+            "date":"Avril 2025",
+            "title":"Lancement officiel de la mutualisation des plateformes e-Timbre, e-Vignette et e-TVA à Djibouti",
+            "description":"Le gouvernement de Djibouti a officiellement lancé une interface unifiée regroupant l'ensemble des services fiscaux dématérialisés...",
+            "realise":"Par Équipe DigiAfrika",
+            "lire":"lire la suite"
+        },
+        {
+          "id":2,
+    "nom": "Nouveau projet",
+    "date": "Mars 2025",
+    "title": "DigiAfrika entame un projet de digitalisation foncière en Côte d'Ivoire",
+    "description": "Notre équipe a démarré un ambitieux projet de modernisation de la gestion foncière en partenariat avec le ministère de la Construction...",
+    "realise": "Par Jean Ndiaye",
+    "lire": "lire la suite",
+    "photo":"photo"
+  },
+  {
+    "id":3,
+    "nom": "Partenariat",
+    "photo":"photo",
+    "date": "Février 2025",
+    "title": "Nouveau partenariat signé avec le Ministère de la Transformation Digitale du Sénégal",
+    "description": "DigiAfrika est fière d'annoncer la signature d'un nouveau partenariat stratégique avec le Ministère de la Transformation Digitale...",
+    "realise": "Par Omar Keita",
+    "lire": "lire la suite"
+  },
+  {
+    "id":4,
+    "nom": "Article",
+    "photo":"photo",
+    "date": "Janvier 2025",
+    "title": "La numérisation des services publics : un levier de développement pour l'Afrique",
+    "description": "Comment la transformation numérique des administrations contribue à l'efficacité des services publics et au développement économique...",
+    "realise": "Par Aminata Diop",
+    "lire": "lire la suite"
+  },
+  {
+    "id":5,
+    "nom": "Guide",
+    "photo":"photo",
+    "date": "Décembre 2024",
+    "title": "Réussir l'implémentation d'un système d'e-gouvernement en Afrique",
+    "description": "Les facteurs clés de succès et les écueils à éviter lors de la mise en place d'un système d'administration électronique...",
+    "realise": "Par Équipe DigiAfrika",
+    "lire": "lire la suite"
+  },
+  {
+    "id":6,
+    "nom": "Retour d'expérience",
+    "photo":"photo",
+    "date": "Novembre 2024",
+    "title": "Retour d'expérience : un an après le déploiement de la plateforme e-Timbre",
+    "description": "Bilan et enseignements tirés après une année d'utilisation de la plateforme e-Timbre par les administrés et les fonctionnaires...",
+    "realise": "Par Jean Ndiaye",
+    "lire": "lire la suite"
+  }
+
+         ],
+
+         "button":{
+            "nom":"charger plus d'articles",
+            "acttionpath":"/"
+         }
+    },
+
+    "modernise":{
+            "title":"Restez informé",
+            "description":"Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités et articles.",
+             "actionlabel":"S'inscrire",
+            "actionpath":"/"
+           
+                
+            
+        }
+}

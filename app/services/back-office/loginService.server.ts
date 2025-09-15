@@ -1,21 +1,32 @@
 import { redirect } from "react-router";
+import { redirectDocument } from "react-router";
 
 import type { Route } from "../../+types/root";
 import data from "../../models/api/user.json";
 
+import bcrypt from "bcrypt";
 import { createCookieSessionStorage } from "react-router";
+import type { User } from "@prisma/client";
+import { PrismaClient } from "~/generated/prisma/client";
+const UserRepository = new PrismaClient();
 
 export const loginAction = async ({ request }: Route.ActionArgs) => {
-  
+  //const users=  await UserRepository.findAll()
+
   return loginUser(request);
 };
 
+export const changePasswordAction = async ({ request }: Route.ActionArgs) => {
+  //const users=  await UserRepository.findAll()
+
+  return changePassword(request);
+};
+
 export const deconnectAction = async ({ request }: Route.ActionArgs) => {
-  
   return logout(request);
 };
 
-const fakeData = [
+/*const fakeData = [
   {
     id: "345DFULKJHGJ764",
     username: "fatou",
@@ -35,7 +46,7 @@ const fakeData = [
     
     role: "superadmin",
   },
-];
+]; */
 
 // On configure le cookie pour stocker la session
 export const { getSession, commitSession, destroySession } =
@@ -59,6 +70,61 @@ export const loginUser = async (request: Request) => {
     username: data.get("name") as string,
     password: data.get("mdp") as string,
   };
+
+  const user = await UserRepository.user.findUnique({
+    where: {
+      username: userCredential.username,
+    },
+  });
+  console.log("Utilisateur trouvé :", user);
+
+  if (user) {
+    const isPasswordValid = await bcrypt.compare(
+      userCredential.password,
+      user.password
+    );
+    if (isPasswordValid ) {
+      const { password, ...UserData } = user;
+      session.set("id", UserData.id),
+        session.set("username", UserData.username),
+        session.set("role", UserData.role);
+        session.set("mustchangepassword", UserData.mustchangepassword);
+
+        
+      return redirect("/dashboard", {
+        headers: {
+          "Set-Cookie": await commitSession(session),
+        },
+      });
+    }
+    
+    session.flash("error", "email mot de passe incorrect");
+
+    return redirect("/login", {
+      headers: {
+        "Set-Cookie": await commitSession(session),
+      },
+    });
+  }
+  session.flash("error", "cette utilisateur n exixte pas");
+
+  return redirect("/login", {
+    headers: {
+      "Set-Cookie": await commitSession(session),
+    },
+  });
+
+
+};
+
+/*export const loginUser = async (request: Request) => {
+  const data = await request.formData();
+  const session = await getSession(request.headers.get("Cookie"));
+  let userCredential: Credentials = {
+    username: data.get("name") as string,
+    password: data.get("mdp") as string,
+  };
+  
   const user = fakeData.find((User) => {
     if (
       User.username == userCredential.username &&
@@ -88,30 +154,30 @@ export const loginUser = async (request: Request) => {
       "Set-Cookie": await commitSession(session),
     },
   });
-};
+}; */
 
 //recuperer la session si l'utilisateur est connecter
 
 export const protectRoute = async (request: Request) => {
   const session = await getSession(request.headers.get("Cookie"));
-  console.log(session.has("id"))
+  console.log(session.has("id"));
   if (session.has("id")) {
     const user: SessionData = {
       id: session.get("id") as string,
       username: session.get("username") as string,
       role: session.get("role") as string,
-
+      mustchangepassword: session.get("mustchangepassword") as boolean
     };
-    return user
+    return user;
   }
 
   session.flash("error", "veillez vous authentidier dabord");
-  console.log(session.data)
+  console.log(session.data);
   return redirect("/login", {
     headers: {
       "Set-Cookie": await commitSession(session),
     },
-   // status: 403,
+    // status: 403,
     status: 302,
     statusText: "Accés non autorisé",
   });
@@ -127,18 +193,51 @@ export const logout = async (request: Request) => {
   });
 };
 
-
 export const haslogin = async (request: Request) => {
- const session = await getSession(request.headers.get("Cookie"));
+  const session = await getSession(request.headers.get("Cookie"));
 
   if (session.has("id")) {
     // utilisateur déjà connecté → redirection vers dashboard
     return redirect("/dashboard");
   }
 
-  const message= {
-    error:session.get("error")
-  } 
-  
-  return message ; // utilisateur non connecté → peut accéder à la page login
+  const message = {
+    error: session.get("error"),
+  };
+
+  return message; // utilisateur non connecté → peut accéder à la page login
 };
+
+export const changePassword = async (request: Request) => {
+  const formData = await request.formData();
+  const newPassword = formData.get("newPassword") as string;
+   const confirmPassword = formData.get("confirm") as string;
+
+
+  // Récupérer la session
+  const session = await getSession(request.headers.get("Cookie"));
+  const username = session.get("username");
+  
+   if(newPassword==confirmPassword){
+     const hashedPassword = await bcrypt.hash(newPassword, 10);
+    await UserRepository.user.update({
+    where: { username: username },
+    data: {
+      password: hashedPassword,
+      mustchangepassword: false,
+    },
+  });
+  session.set("mustchangepassword", false);
+  
+  console.log("valeur de la session ",session.get( "mustchangepassword"))
+   return redirectDocument("/login", {
+    headers: {
+      "Set-Cookie": await commitSession(session),
+    },
+    
+  });
+   }
+  
+   
+  
+}

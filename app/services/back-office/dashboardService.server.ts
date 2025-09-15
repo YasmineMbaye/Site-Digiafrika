@@ -6,7 +6,7 @@ import {getSession} from "../../services/back-office/loginService.server"
 
 
 export const dashboardLoader= async({ request }:Route.LoaderArgs)=> {
-
+  
   return  await protectRoute(request)
 }
 

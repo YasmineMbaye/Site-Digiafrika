@@ -20,6 +20,7 @@ type SessionData={
     id:string;
     username:string;
     role:string
+    mustchangepassword?: boolean
 
 }
 

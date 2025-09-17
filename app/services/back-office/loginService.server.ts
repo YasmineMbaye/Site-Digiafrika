@@ -86,8 +86,8 @@ export const loginUser = async (request: Request) => {
     if (isPasswordValid ) {
       const { password, ...UserData } = user;
       session.set("id", UserData.id),
-        session.set("username", UserData.username),
-        session.set("role", UserData.role);
+        session.set("username", UserData.roleid),
+        session.set("role", UserData.username),
         session.set("mustchangepassword", UserData.mustchangepassword);
 
         

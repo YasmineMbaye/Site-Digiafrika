@@ -1,6 +1,6 @@
 generator client {
-  provider = "prisma-client"
-  output = "../app/generated/prisma/"
+  provider = "prisma-client-js"
+ //  output = "../app/generated/prisma/"
 }
 
 datasource db {
@@ -13,8 +13,8 @@ model User {
   alias    String?
   password String
   username String  @unique
-  role Role @relation(fields: [rolename], references: [name])
-  rolename String 
+  role Role @relation(fields: [roleid], references: [id])
+  roleid String 
   
   mustchangepassword Boolean @default(true)
 }

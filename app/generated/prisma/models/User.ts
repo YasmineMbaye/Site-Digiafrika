@@ -28,7 +28,7 @@ export type UserMinAggregateOutputType = {
   alias: string | null
   password: string | null
   username: string | null
-  rolename: string | null
+  roleid: string | null
   mustchangepassword: boolean | null
 }
 
@@ -37,7 +37,7 @@ export type UserMaxAggregateOutputType = {
   alias: string | null
   password: string | null
   username: string | null
-  rolename: string | null
+  roleid: string | null
   mustchangepassword: boolean | null
 }
 
@@ -46,7 +46,7 @@ export type UserCountAggregateOutputType = {
   alias: number
   password: number
   username: number
-  rolename: number
+  roleid: number
   mustchangepassword: number
   _all: number
 }
@@ -57,7 +57,7 @@ export type UserMinAggregateInputType = {
   alias?: true
   password?: true
   username?: true
-  rolename?: true
+  roleid?: true
   mustchangepassword?: true
 }
 
@@ -66,7 +66,7 @@ export type UserMaxAggregateInputType = {
   alias?: true
   password?: true
   username?: true
-  rolename?: true
+  roleid?: true
   mustchangepassword?: true
 }
 
@@ -75,7 +75,7 @@ export type UserCountAggregateInputType = {
   alias?: true
   password?: true
   username?: true
-  rolename?: true
+  roleid?: true
   mustchangepassword?: true
   _all?: true
 }
@@ -157,7 +157,7 @@ export type UserGroupByOutputType = {
   alias: string | null
   password: string
   username: string
-  rolename: string
+  roleid: string
   mustchangepassword: boolean
   _count: UserCountAggregateOutputType | null
   _min: UserMinAggregateOutputType | null
@@ -187,7 +187,7 @@ export type UserWhereInput = {
   alias?: Prisma.StringNullableFilter<"User"> | string | null
   password?: Prisma.StringFilter<"User"> | string
   username?: Prisma.StringFilter<"User"> | string
-  rolename?: Prisma.StringFilter<"User"> | string
+  roleid?: Prisma.StringFilter<"User"> | string
   mustchangepassword?: Prisma.BoolFilter<"User"> | boolean
   role?: Prisma.XOR<Prisma.RoleScalarRelationFilter, Prisma.RoleWhereInput>
 }
@@ -197,7 +197,7 @@ export type UserOrderByWithRelationInput = {
   alias?: Prisma.SortOrderInput | Prisma.SortOrder
   password?: Prisma.SortOrder
   username?: Prisma.SortOrder
-  rolename?: Prisma.SortOrder
+  roleid?: Prisma.SortOrder
   mustchangepassword?: Prisma.SortOrder
   role?: Prisma.RoleOrderByWithRelationInput
 }
@@ -210,7 +210,7 @@ export type UserWhereUniqueInput = Prisma.AtLeast<{
   NOT?: Prisma.UserWhereInput | Prisma.UserWhereInput[]
   alias?: Prisma.StringNullableFilter<"User"> | string | null
   password?: Prisma.StringFilter<"User"> | string
-  rolename?: Prisma.StringFilter<"User"> | string
+  roleid?: Prisma.StringFilter<"User"> | string
   mustchangepassword?: Prisma.BoolFilter<"User"> | boolean
   role?: Prisma.XOR<Prisma.RoleScalarRelationFilter, Prisma.RoleWhereInput>
 }, "id" | "username">
@@ -220,7 +220,7 @@ export type UserOrderByWithAggregationInput = {
   alias?: Prisma.SortOrderInput | Prisma.SortOrder
   password?: Prisma.SortOrder
   username?: Prisma.SortOrder
-  rolename?: Prisma.SortOrder
+  roleid?: Prisma.SortOrder
   mustchangepassword?: Prisma.SortOrder
   _count?: Prisma.UserCountOrderByAggregateInput
   _max?: Prisma.UserMaxOrderByAggregateInput
@@ -235,7 +235,7 @@ export type UserScalarWhereWithAggregatesInput = {
   alias?: Prisma.StringNullableWithAggregatesFilter<"User"> | string | null
   password?: Prisma.StringWithAggregatesFilter<"User"> | string
   username?: Prisma.StringWithAggregatesFilter<"User"> | string
-  rolename?: Prisma.StringWithAggregatesFilter<"User"> | string
+  roleid?: Prisma.StringWithAggregatesFilter<"User"> | string
   mustchangepassword?: Prisma.BoolWithAggregatesFilter<"User"> | boolean
 }
 
@@ -253,7 +253,7 @@ export type UserUncheckedCreateInput = {
   alias?: string | null
   password: string
   username: string
-  rolename: string
+  roleid: string
   mustchangepassword?: boolean
 }
 
@@ -271,7 +271,7 @@ export type UserUncheckedUpdateInput = {
   alias?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   password?: Prisma.StringFieldUpdateOperationsInput | string
   username?: Prisma.StringFieldUpdateOperationsInput | string
-  rolename?: Prisma.StringFieldUpdateOperationsInput | string
+  roleid?: Prisma.StringFieldUpdateOperationsInput | string
   mustchangepassword?: Prisma.BoolFieldUpdateOperationsInput | boolean
 }
 
@@ -280,7 +280,7 @@ export type UserCreateManyInput = {
   alias?: string | null
   password: string
   username: string
-  rolename: string
+  roleid: string
   mustchangepassword?: boolean
 }
 
@@ -297,7 +297,7 @@ export type UserUncheckedUpdateManyInput = {
   alias?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   password?: Prisma.StringFieldUpdateOperationsInput | string
   username?: Prisma.StringFieldUpdateOperationsInput | string
-  rolename?: Prisma.StringFieldUpdateOperationsInput | string
+  roleid?: Prisma.StringFieldUpdateOperationsInput | string
   mustchangepassword?: Prisma.BoolFieldUpdateOperationsInput | boolean
 }
 
@@ -306,7 +306,7 @@ export type UserCountOrderByAggregateInput = {
   alias?: Prisma.SortOrder
   password?: Prisma.SortOrder
   username?: Prisma.SortOrder
-  rolename?: Prisma.SortOrder
+  roleid?: Prisma.SortOrder
   mustchangepassword?: Prisma.SortOrder
 }
 
@@ -315,7 +315,7 @@ export type UserMaxOrderByAggregateInput = {
   alias?: Prisma.SortOrder
   password?: Prisma.SortOrder
   username?: Prisma.SortOrder
-  rolename?: Prisma.SortOrder
+  roleid?: Prisma.SortOrder
   mustchangepassword?: Prisma.SortOrder
 }
 
@@ -324,7 +324,7 @@ export type UserMinOrderByAggregateInput = {
   alias?: Prisma.SortOrder
   password?: Prisma.SortOrder
   username?: Prisma.SortOrder
-  rolename?: Prisma.SortOrder
+  roleid?: Prisma.SortOrder
   mustchangepassword?: Prisma.SortOrder
 }
 
@@ -442,7 +442,7 @@ export type UserScalarWhereInput = {
   alias?: Prisma.StringNullableFilter<"User"> | string | null
   password?: Prisma.StringFilter<"User"> | string
   username?: Prisma.StringFilter<"User"> | string
-  rolename?: Prisma.StringFilter<"User"> | string
+  roleid?: Prisma.StringFilter<"User"> | string
   mustchangepassword?: Prisma.BoolFilter<"User"> | boolean
 }
 
@@ -485,7 +485,7 @@ export type UserSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   alias?: boolean
   password?: boolean
   username?: boolean
-  rolename?: boolean
+  roleid?: boolean
   mustchangepassword?: boolean
   role?: boolean | Prisma.RoleDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["user"]>
@@ -495,7 +495,7 @@ export type UserSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   alias?: boolean
   password?: boolean
   username?: boolean
-  rolename?: boolean
+  roleid?: boolean
   mustchangepassword?: boolean
   role?: boolean | Prisma.RoleDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["user"]>
@@ -505,7 +505,7 @@ export type UserSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   alias?: boolean
   password?: boolean
   username?: boolean
-  rolename?: boolean
+  roleid?: boolean
   mustchangepassword?: boolean
   role?: boolean | Prisma.RoleDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["user"]>
@@ -515,11 +515,11 @@ export type UserSelectScalar = {
   alias?: boolean
   password?: boolean
   username?: boolean
-  rolename?: boolean
+  roleid?: boolean
   mustchangepassword?: boolean
 }
 
-export type UserOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "alias" | "password" | "username" | "rolename" | "mustchangepassword", ExtArgs["result"]["user"]>
+export type UserOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "alias" | "password" | "username" | "roleid" | "mustchangepassword", ExtArgs["result"]["user"]>
 export type UserInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   role?: boolean | Prisma.RoleDefaultArgs<ExtArgs>
 }
@@ -540,7 +540,7 @@ export type $UserPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs =
     alias: string | null
     password: string
     username: string
-    rolename: string
+    roleid: string
     mustchangepassword: boolean
   }, ExtArgs["result"]["user"]>
   composites: {}
@@ -970,7 +970,7 @@ export interface UserFieldRefs {
   readonly alias: Prisma.FieldRef<"User", 'String'>
   readonly password: Prisma.FieldRef<"User", 'String'>
   readonly username: Prisma.FieldRef<"User", 'String'>
-  readonly rolename: Prisma.FieldRef<"User", 'String'>
+  readonly roleid: Prisma.FieldRef<"User", 'String'>
   readonly mustchangepassword: Prisma.FieldRef<"User", 'Boolean'>
 }
     
